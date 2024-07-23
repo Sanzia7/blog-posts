@@ -1,6 +1,6 @@
 import { ACTION_TYPE } from '../actions'
 
-const initialBlogState = {
+const initialAppState = {
 	isLogout: false,
 	modal: {
 		isOpen: false,
@@ -10,7 +10,7 @@ const initialBlogState = {
 	},
 }
 
-export const appReducer = (state = initialBlogState, action) => {
+export const appReducer = (state = initialAppState, action) => {
 	switch (action.type) {
 		case ACTION_TYPE.LOGOUT:
 			return {
@@ -27,7 +27,7 @@ export const appReducer = (state = initialBlogState, action) => {
 				},
 			}
 		case ACTION_TYPE.CLOSE_MODAL:
-			return initialBlogState
+			return initialAppState
 
 		default:
 			return state
