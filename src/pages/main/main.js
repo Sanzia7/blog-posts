@@ -21,6 +21,7 @@ const MainContainer = ({ className }) => {
 				setPosts(posts)
 				//setLastPage(getLastPageLinks(links))
 				setLastPage(1)
+				console.log('post', posts)
 			},
 		)
 	}, [requestServer, page, isSearch])

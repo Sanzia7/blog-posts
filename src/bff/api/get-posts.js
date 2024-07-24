@@ -2,7 +2,7 @@ import { transformPost } from '../transformers'
 
 export const getPosts = (searchPhrase, page, limit) =>
 	fetch(
-		`http://localhost:3007/posts?_title_like=${searchPhrase}&_page=${page}&_limit=${limit}`,
+		`http://localhost:3007/posts?title_like=${searchPhrase}&_page=${page}&_limit=${limit}`,
 	)
 		.then((loadedPosts) => loadedPosts.json())
 		.then((loadedPosts) => ({
@@ -19,3 +19,5 @@ export const getPosts = (searchPhrase, page, limit) =>
 // 			links,
 //           console.log('Links:', links)
 // 		}))
+
+// `http://localhost:3007/posts?_title_like=${searchPhrase}&_page=${page}&_limit=${limit}`,
