@@ -10,7 +10,7 @@ export const getPosts = (searchPhrase, page, limit) =>
 		}))
 
 // export const getPosts = (searchPhrase, page, limit) =>
-// 	fetch(`http://localhost:3005/posts?_title_like=${searchPhrase}&_page=${page}&_limit=${limit}`)
+// 	fetch(`http://localhost:3007/posts?title_like=${searchPhrase}&_page=${page}&_limit=${limit}`)
 // 		.then((loadedPosts) =>
 // 			Promise.all([loadedPosts.json(), loadedPosts.headers.get(`Link`)]),
 // 		)
@@ -20,4 +20,4 @@ export const getPosts = (searchPhrase, page, limit) =>
 //           console.log('Links:', links)
 // 		}))
 
-// `http://localhost:3007/posts?_title_like=${searchPhrase}&_page=${page}&_limit=${limit}`,
+
